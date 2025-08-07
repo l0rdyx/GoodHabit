@@ -1,11 +1,15 @@
 package org.glebkrasnopolin.goodhabit
 
+import models.Logs
 import org.glebkrasnopolin.goodhabit.repository.LogRepository
 import org.glebkrasnopolin.goodhabit.repository.LogRepositoryImpl
+import org.koin.core.module.Module
 import org.koin.dsl.module
-import usecase.LogUseCase
 
 val appModule = module {
-    single<LogRepository> { LogRepositoryImpl() }
-    single { LogUseCase(get()) }
+    includes(platformModule)
+    single<LogRepository> { LogRepositoryImpl(get()) }
+    single { Logs(get()) }  // AppDatabase
 }
+
+internal expect val platformModule: Module

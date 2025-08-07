@@ -1,0 +1,23 @@
+CREATE TABLE LogEntry (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    type TEXT NOT NULL,
+    timestamp INTEGER NOT NULL,
+    value INTEGER
+);
+
+insert:
+INSERT INTO LogEntry(type, timestamp, value)
+VALUES (?, ?, ?);
+
+selectAll:
+SELECT * FROM LogEntry;
+
+selectGroupedCountByDay:
+SELECT
+  type,
+  CAST(timestamp / 86400000 AS INTEGER),  -- без alias!
+  COUNT(*)
+FROM LogEntry
+WHERE type = ?
+GROUP BY CAST(timestamp / 86400000 AS INTEGER);
+
