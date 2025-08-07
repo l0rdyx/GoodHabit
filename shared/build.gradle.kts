@@ -18,7 +18,7 @@ kotlin {
     
     sourceSets {
         commonMain.dependencies {
-            // put your Multiplatform dependencies here
+            implementation("io.insert-koin:koin-core:3.5.3")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
