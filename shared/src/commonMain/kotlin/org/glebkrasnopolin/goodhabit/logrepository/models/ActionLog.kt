@@ -1,4 +1,4 @@
-package org.glebkrasnopolin.goodhabit.models
+package org.glebkrasnopolin.goodhabit.logrepository.models
 
 data class ActionLog (
     val type: ActionType,

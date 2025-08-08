@@ -1,6 +1,6 @@
-package org.glebkrasnopolin.di
+package org.glebkrasnopolin.goodhabit.di
 
-import org.glebkrasnopolin.goodhabit.usecase.HomeScreenViewModel
+import org.glebkrasnopolin.goodhabit.viewmodels.HomeScreenViewModel
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 

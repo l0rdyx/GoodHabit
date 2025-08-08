@@ -1,4 +1,4 @@
-package org.glebkrasnopolin.di
+package org.glebkrasnopolin.goodhabit.di
 
 import org.glebkrasnopolin.goodhabit.appModule
 import org.koin.core.context.startKoin

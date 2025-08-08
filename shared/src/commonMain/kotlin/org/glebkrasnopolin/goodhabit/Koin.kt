@@ -1,9 +1,9 @@
 package org.glebkrasnopolin.goodhabit
 
 import models.Logs
-import org.glebkrasnopolin.goodhabit.repository.LogRepository
-import org.glebkrasnopolin.goodhabit.repository.LogRepositoryImpl
-import org.glebkrasnopolin.goodhabit.usecase.HomeScreenViewModel
+import org.glebkrasnopolin.goodhabit.logrepository.repository.LogRepository
+import org.glebkrasnopolin.goodhabit.logrepository.repository.LogRepositoryImpl
+import org.glebkrasnopolin.goodhabit.viewmodels.HomeScreenViewModel
 import org.koin.core.module.Module
 import org.koin.dsl.module
 

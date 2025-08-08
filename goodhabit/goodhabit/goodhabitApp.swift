@@ -11,9 +11,7 @@ import Shared
 @main
 struct goodhabitApp: App {
     init() {
-        print("Creating VM")
         KoinInitKt.doInitKoin()
-        print("Created VM")
     }
     var body: some Scene {
         WindowGroup {

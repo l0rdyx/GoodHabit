@@ -1,10 +1,10 @@
-package org.glebkrasnopolin.goodhabit.repository
+package org.glebkrasnopolin.goodhabit.logrepository.repository
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
 import models.Logs
-import org.glebkrasnopolin.goodhabit.models.ActionLog
-import org.glebkrasnopolin.goodhabit.models.ActionType
+import org.glebkrasnopolin.goodhabit.logrepository.models.ActionLog
+import org.glebkrasnopolin.goodhabit.logrepository.models.ActionType
 
 class LogRepositoryImpl(
     private val db: Logs
