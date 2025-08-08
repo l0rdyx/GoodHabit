@@ -1,9 +1,12 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.sqlDelight)
 }
 
 kotlin {
+    val xcframework = XCFramework()
     listOf(
         iosX64(),
         iosArm64(),
@@ -12,6 +15,7 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "Shared"
             isStatic = true
+            xcframework.add(this)
         }
     }
 

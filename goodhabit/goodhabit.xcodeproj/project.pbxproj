@@ -6,126 +6,141 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F128EC1A2E45F74E0074A485 /* shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128EC192E45F74E0074A485 /* shared.xcframework */; };
+		F128EC1B2E45F74E0074A485 /* shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F128EC192E45F74E0074A485 /* shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F128EC1E2E45FC5A0074A485 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F128EC1D2E45FC5A0074A485 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F128EC1C2E45F74E0074A485 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F128EC1B2E45F74E0074A485 /* shared.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B9DA97B12DC1472C00A4DA20 /* GoodHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F128EC042E45F3940074A485 /* goodhabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goodhabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F128EC192E45F74E0074A485 /* shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = shared.xcframework; path = ../shared/build/XCFrameworks/release/shared.xcframework; sourceTree = "<group>"; };
+		F128EC1D2E45FC5A0074A485 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B99700CA2DC9B8D800C7335B /* Exceptions for "iosApp" folder in "iosApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B9DA97B02DC1472C00A4DA20 /* iosApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B9DA97B32DC1472C00A4DA20 /* iosApp */ = {
+		F128EC062E45F3940074A485 /* goodhabit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B99700CA2DC9B8D800C7335B /* Exceptions for "iosApp" folder in "iosApp" target */,
-			);
-			path = iosApp;
-			sourceTree = "<group>";
-		};
-		B9DA98002DC14AA900A4DA20 /* Configuration */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Configuration;
+			path = goodhabit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B9DA97AE2DC1472C00A4DA20 /* Frameworks */ = {
+		F128EC012E45F3940074A485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F128EC1E2E45FC5A0074A485 /* libsqlite3.tbd in Frameworks */,
+				F128EC1A2E45F74E0074A485 /* shared.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9DA97A82DC1472C00A4DA20 = {
+		F128EBFB2E45F3940074A485 = {
 			isa = PBXGroup;
 			children = (
-				B9DA98002DC14AA900A4DA20 /* Configuration */,
-				B9DA97B32DC1472C00A4DA20 /* iosApp */,
-				B9DA97B22DC1472C00A4DA20 /* Products */,
+				F128EC062E45F3940074A485 /* goodhabit */,
+				F128EC182E45F6CF0074A485 /* Frameworks */,
+				F128EC052E45F3940074A485 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B9DA97B22DC1472C00A4DA20 /* Products */ = {
+		F128EC052E45F3940074A485 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9DA97B12DC1472C00A4DA20 /* GoodHabit.app */,
+				F128EC042E45F3940074A485 /* goodhabit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F128EC182E45F6CF0074A485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F128EC1D2E45FC5A0074A485 /* libsqlite3.tbd */,
+				F128EC192E45F74E0074A485 /* shared.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9DA97B02DC1472C00A4DA20 /* iosApp */ = {
+		F128EC032E45F3940074A485 /* goodhabit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9DA97BF2DC1472D00A4DA20 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildConfigurationList = F128EC122E45F3950074A485 /* Build configuration list for PBXNativeTarget "goodhabit" */;
 			buildPhases = (
-				B9DA97F42DC1497100A4DA20 /* Compile Kotlin Framework */,
-				B9DA97AD2DC1472C00A4DA20 /* Sources */,
-				B9DA97AE2DC1472C00A4DA20 /* Frameworks */,
-				B9DA97AF2DC1472C00A4DA20 /* Resources */,
+				F128EC002E45F3940074A485 /* Sources */,
+				F128EC012E45F3940074A485 /* Frameworks */,
+				F128EC022E45F3940074A485 /* Resources */,
+				F128EC1C2E45F74E0074A485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B9DA97B32DC1472C00A4DA20 /* iosApp */,
+				F128EC062E45F3940074A485 /* goodhabit */,
 			);
-			name = iosApp;
+			name = goodhabit;
 			packageProductDependencies = (
 			);
-			productName = iosApp;
-			productReference = B9DA97B12DC1472C00A4DA20 /* GoodHabit.app */;
+			productName = goodhabit;
+			productReference = F128EC042E45F3940074A485 /* goodhabit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B9DA97A92DC1472C00A4DA20 /* Project object */ = {
+		F128EBFC2E45F3940074A485 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					B9DA97B02DC1472C00A4DA20 = {
-						CreatedOnToolsVersion = 16.2;
+					F128EC032E45F3940074A485 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = B9DA97AC2DC1472C00A4DA20 /* Build configuration list for PBXProject "iosApp" */;
+			buildConfigurationList = F128EBFF2E45F3940074A485 /* Build configuration list for PBXProject "goodhabit" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B9DA97A82DC1472C00A4DA20;
+			mainGroup = F128EBFB2E45F3940074A485;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
+			productRefGroup = F128EC052E45F3940074A485 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9DA97B02DC1472C00A4DA20 /* iosApp */,
+				F128EC032E45F3940074A485 /* goodhabit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B9DA97AF2DC1472C00A4DA20 /* Resources */ = {
+		F128EC022E45F3940074A485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,30 +149,8 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B9DA97F42DC1497100A4DA20 /* Compile Kotlin Framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Kotlin Framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \\\"YES\\\"\"\n  exit 0\nfi\ncd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		B9DA97AD2DC1472C00A4DA20 /* Sources */ = {
+		F128EC002E45F3940074A485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -167,7 +160,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B9DA97BD2DC1472D00A4DA20 /* Debug */ = {
+		F128EC102E45F3950074A485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,7 +197,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -219,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -230,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		B9DA97BE2DC1472D00A4DA20 /* Release */ = {
+		F128EC112E45F3950074A485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +260,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -276,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -286,24 +279,17 @@
 			};
 			name = Release;
 		};
-		B9DA97C02DC1472D00A4DA20 /* Debug */ = {
+		F128EC132E45F3950074A485 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = B9DA98002DC14AA900A4DA20 /* Configuration */;
-			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "${TEAM_ID}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"goodhabit/Preview Content\"";
+				DEVELOPMENT_TEAM = F4ZFRAK9P8;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,30 +299,26 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebco.goodhabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B9DA97C12DC1472D00A4DA20 /* Release */ = {
+		F128EC142E45F3950074A485 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = B9DA98002DC14AA900A4DA20 /* Configuration */;
-			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "${TEAM_ID}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"goodhabit/Preview Content\"";
+				DEVELOPMENT_TEAM = F4ZFRAK9P8;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +328,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebco.goodhabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,25 +340,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9DA97AC2DC1472C00A4DA20 /* Build configuration list for PBXProject "iosApp" */ = {
+		F128EBFF2E45F3940074A485 /* Build configuration list for PBXProject "goodhabit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9DA97BD2DC1472D00A4DA20 /* Debug */,
-				B9DA97BE2DC1472D00A4DA20 /* Release */,
+				F128EC102E45F3950074A485 /* Debug */,
+				F128EC112E45F3950074A485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9DA97BF2DC1472D00A4DA20 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+		F128EC122E45F3950074A485 /* Build configuration list for PBXNativeTarget "goodhabit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9DA97C02DC1472D00A4DA20 /* Debug */,
-				B9DA97C12DC1472D00A4DA20 /* Release */,
+				F128EC132E45F3950074A485 /* Debug */,
+				F128EC142E45F3950074A485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
+	rootObject = F128EBFC2E45F3940074A485 /* Project object */;
 }

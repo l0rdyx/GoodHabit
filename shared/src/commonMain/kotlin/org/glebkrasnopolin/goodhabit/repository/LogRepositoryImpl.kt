@@ -16,6 +16,10 @@ class LogRepositoryImpl(
             timestamp = now.toEpochMilliseconds(),
             value_ = value ?: 0
         )
+        /*
+        val allLogs = db.logQueries.selectAll().executeAsList()
+        println(allLogs)
+        */
     }
 
     override suspend fun getWeeklyStats(): List<ActionLog> {
