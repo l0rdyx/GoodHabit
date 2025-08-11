@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     @State private var showToast = false
     @StateObject private var viewModel: HomeScreenViewModelWrapper
 
